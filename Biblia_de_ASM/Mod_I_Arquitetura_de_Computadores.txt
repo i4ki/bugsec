@@ -1,5 +1,12 @@
 MÓDULO I - Arquitetura de Computadores
 
+Para  uma perfeita  compreensão do assembly é  essencial que se compreenda a 
+arquitetura do  computador, a organização  do sistema, etc, pois trabalharemos a
+nível de hardware. Esse  módulo será  apenas uma introdução  ao funcionamento do
+computador, voltaremos nesse assunto com bastante frequencia durante o curso.
+
+  [FIXME] [FAZER ESSA INTRODUÇÃO]
+
 0x01 - Pensando como um computador
 
 A  CPU somente entende sequencias de zeros e uns lidos da memória. A única forma 
