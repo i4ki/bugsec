@@ -5,7 +5,7 @@ arquitetura do  computador, a organização  do sistema, etc, pois trabalharemos
 nível de hardware. Esse  módulo será  apenas uma introdução  ao funcionamento do
 computador, voltaremos nesse assunto com bastante frequencia durante o curso.
 
-  [FIXME] [FAZER ESSA INTRODUÇÃO]
+             [FIXME] [FAZER ESSA INTRODUÇÃO]
 
 0x01 - Pensando como um computador
 
@@ -162,7 +162,7 @@ ________________________________________________________________________________
     
     B) Representação da word 0000000001101001 na memória. Como uma word possui
        dois bytes, ela é dividida em duas partes de 1 byte. Ficando a parte
-       menos significativa (L.O, Low Order) num endereço e a  mais significativa
+       menos significativa (I.O, Low Order) num endereço e a  mais significativa
        no endereço seguinte.
 ________________________________________________________________________________
 
@@ -190,7 +190,7 @@ programas e se encarrega de fazer a conversão para o endereço real de memória
 uma maneira segura, impedindo acessos indevidos e colisão de endereços entre  os
 programas. Vamos ver esse funcionamento mais de perto.
 
-0x03:0x02 - Memória Virtual
+0x06 - Memória Virtual
 
 Como  já falei, memória virtual é uma abstração  criada pelo kernel e  provê uma
 interface segura para os processos.É claro que o código e os dados dos programas
@@ -237,7 +237,7 @@ diferentes da memória real, evitando conflitos. Veja o diagrama 5:
 ________________________________________________________________________________
 
      Programa A                                         Memória Real
-	  _________              ___________________        _____________
+      _________              ___________________        _____________
      |_________|            |      KERNEL       |      |_____________| 0x000000
 0x05 |____K____|______      |                   |      |_____________| 0x000001
      |         |      \     |   Page Table A    |      |     ...     |   ...
