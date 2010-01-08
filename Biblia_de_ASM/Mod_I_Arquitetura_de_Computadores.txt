@@ -132,7 +132,7 @@ ________________________________________________________________________________
 A  memória pode armazenar um máximo de 2 ** n endereços. Onde n é número de bits 
 do barramento de  endereços (address bus). Esse número vária de processador para 
 processador e pode ser 16, 24, 32, etc.
-Na arquitetura 80x86 cada endereço de memória pode ocupar 1 apenas um byte.Então 
+Na arquitetura 80x86 cada  endereço de  memória pode ocupar apenas 1 byte. Então 
 se  desejarmos armazenar  outros  tipos de dados,  como um word  ou  doble  word 
 precisamos usar alguma técnica específica. Cada processador tem a sua maneira de 
 resolver  esse problema, a  familia 80x86  armazena a  parte menos significativa 
@@ -150,8 +150,8 @@ ________________________________________________________________________________
          |__ |_______0_______| - 788   --> Caracter '0' (1 byte)
              |      ...      | - ...
              |_______________| - 2322
-          __ |_______________| - 2323      --> Word (2 bytes)
-     (B) |   |___0000 0000___| - 2324
+          __ |_______________| - 2323      
+     (B) |   |___0000 0000___| - 2324  --> word (2 bytes)
          |__ |___0110 1001___| - 2325
              |_______________| - 2326
 
