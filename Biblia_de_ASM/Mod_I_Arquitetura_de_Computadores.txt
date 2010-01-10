@@ -70,7 +70,29 @@ ________________________________________________________________________________
                     Arquitetura de Von Neumann
 ________________________________________________________________________________
 
-0x03 - CPU (Central Process Unit)
+0x03 - System Bus (Barramento)
+
+Chama-se  System Bus[5]  (Barramento em português) ao  que faz a  ligação  entre os
+componentes do hardware do  computador. São chamados de linhas de  comunicação e 
+são encarregadas de transferir as informações entre o hardware.
+
+Existem  vários barramentos  diferentes,  todos têm a  mesma  função, transmitir 
+informações/dados a diferença é quem interligam, o que trasmitem e como o fazem.
+Na arquitetura de Von Neumann existem três importantes Barramentos, que são:
+
+* Data Bus:     Transfere dados entre o CPU e a memória e/ou I/O
+                Veja mais em [6].
+
+* Address Bus:  Provê os endereços de memória o qual serão transmitidos pelo 
+                Data Bus.
+                Veja mais em [7].
+
+* Control Bus:  Uma  coleção de  sinais elétricos  que dirão  como a  CPU irá se 
+                comunicar com os Bus. Controla os outros barramentos, garantindo 
+                que não haja colisão nem perda de informações.
+                Veja mais em [8].
+
+0x04 - CPU (Central Process Unit)
 
 É aqui que a mágica acontece. 
 A CPU  ou a "Unidade  Central de Processamento"  pode ser  dividida em 4 partes:
@@ -102,27 +124,6 @@ ________________________________________________________________________________
               Interação entre os componentes do processador
 ________________________________________________________________________________
 
-0x04 - System Bus (Barramento)
-
-Chama-se  System Bus[5]  (Barramento em português) ao  que faz a  ligação  entre os
-componentes do hardware do  computador. São chamados de linhas de  comunicação e 
-são encarregadas de transferir as informações entre o hardware.
-
-Existem  vários barramentos  diferentes,  todos têm a  mesma  função, transmitir 
-informações/dados a diferença é quem interligam, o que trasmitem e como o fazem.
-Na arquitetura de Von Neumann existem três importantes Barramentos, que são:
-
-* Data Bus:     Transfere dados entre o CPU e a memória e/ou I/O
-                Veja mais em [6].
-
-* Address Bus:  Provê os endereços de memória o qual serão transmitidos pelo 
-                Data Bus.
-                Veja mais em [7].
-
-* Control Bus:  Uma  coleção de  sinais elétricos  que dirão  como a  CPU irá se 
-                comunicar com os Bus. Controla os outros barramentos, garantindo 
-                que não haja colisão nem perda de informações.
-                Veja mais em [8].
 
 				
 0x05 - Memória
