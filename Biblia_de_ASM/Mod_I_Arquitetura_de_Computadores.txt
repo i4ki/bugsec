@@ -36,6 +36,10 @@ processador (step-by-step).
 
 0x02 - Arquitetura de um Computador
 
+A  "Arquitetura de um  computador" é a  teoria por  detrás do seu funcionamento,
+esse termo abrange muito mais conceitos como a organização do hardware ou do seu
+sistema operacional.
+
 A arquitetura  80x86 é  baseada na arquitetura  de  John Von Neumann[1].
 Esse modelo  não teve mudanças significativas desde a década de 50 (época da sua 
 idealização  por Neumann), mas  os  conceitos,  implementações,  técnicas,  etc,
@@ -62,7 +66,7 @@ ________________________________________________________________________________
                                  |   OUTPUT    |     | A  |
                                  |_____________|     |    |
                                                      |____|
-                                                      
+
                     Arquitetura de Von Neumann
 ________________________________________________________________________________
 
@@ -76,11 +80,27 @@ A CPU  ou a "Unidade  Central de Processamento"  pode ser  dividida em 4 partes:
 - Execution Unit: É onde são executadas as operações e cálculos do seu programa.
                   Contém a  ALU  (Arithmethic Logic Unit),  onde  realiza-se  as
                   operações aritméticas e lógicas.
-- Registradores: São memórias de pequena capacidade  (16 ou 32 bits) usadas para 
-                 armazenar informações  temporárias dentro do processador. Podem 
-                 ser comparados  à variáveis,  em que podemos  armazenar valores 
-                 temporariamente. Serão extensamente abordados no decorrer do 
-                 curso.
+- Registradores:  São memórias de pequena capacidade  (16 ou 32 bits) usadas para 
+                  armazenar informações  temporárias dentro do processador. Podem 
+                  ser comparados  à variáveis,  em que podemos  armazenar valores 
+                  temporariamente. Serão extensamente abordados no decorrer do 
+                  curso.
+- Flags:          [ FAZER ]
+
+Veja no diagrama a seguir como esses componentes interagem:
+
+Diagrama 2
+________________________________________________________________________________
+
+     ____________               ____________           
+    |            |             |            |           _________________
+    |  Control   |             | Execution  | <------> |__Registradores__|
+    |    Unit    | <---------> |    Unit    |           _________________
+    |            |             |            | <------> |______Flags______|
+    |____________|             |____________|
+
+              Interação entre os componentes do processador
+________________________________________________________________________________
 
 0x04 - System Bus (Barramento)
 
@@ -111,7 +131,7 @@ Memória, ou  neste caso,  memória RAM  (Random Access Memory), é  um disposit
 físico que possui a capacidade de armazenar dados temporarios.
 Ela pode ser pensada como um array de bytes, veja o diagrama abaixo:
 
-Diagrama 2:
+Diagrama 3:
 ________________________________________________________________________________
                     _______________
                    |_______________| - 0
@@ -140,7 +160,7 @@ resolver  esse problema, a  familia 80x86  armazena a  parte menos significativa
 (High Order, H.O) no próximo endereço. 
 Veja o diagrama 3:
 
-Diagrama 3:
+Diagrama 4:
 ________________________________________________________________________________
               _______________
           __ |_______________| - ...
@@ -199,7 +219,7 @@ Cada  endereço de memória virtual é  "mapeado" pelo kernel ao seu corresponde
 endereço de memória física. Isso é feito com uma estrutura chamada "Page Table".
 Veja no diagrama 4:
 
-Diagrama 4:
+Diagrama 5:
 ________________________________________________________________________________
     _________________            ______________            ________________
    |_Memória Virtual_|          |__Page Table__|          |__Memória Real__|
