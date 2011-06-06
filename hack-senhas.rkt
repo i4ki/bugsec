@@ -7,6 +7,8 @@
 (define file-to-try #f)
 (define pattern-to-try #f)
 (define passwd-first? #t)
+(define verbose? #f)
+(define debug? #f)
 
 (define hacking-options
   (command-line
@@ -24,7 +26,16 @@
    [("-w" "--passwd first?")
     "Use the passwd in the first position?"
     (set! passwd-first? #t)]
+   [("-v" "--verbose") "Run with verbose messages"
+                       (set! verbose? #t)]
+   [("-d" "--debug") "Option for debug of responses from the server."
+                     (set! debug? #t)]
    #:args ()
    (if (not file-to-try)
       (displayln "File location not given.")
-      (force-it! url-to-try file-to-try pattern-to-try passwd-first?))))
+      (force-it! url-to-try 
+                 file-to-try 
+                 pattern-to-try 
+                 passwd-first? 
+                 verbose?
+                 debug?))))
